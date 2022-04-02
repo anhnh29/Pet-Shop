@@ -1,0 +1,133 @@
+.container {
+  width: 100%;
+  height: auto;
+  .headerContainer {
+    width: 100%;
+    height: auto;
+
+    .topBar {
+      background-color: rgba(233, 124, 57, 1);
+      width: 100%;
+      max-height: 40px;
+    }
+    .hearder {
+      max-width: 970px;
+      height: 100px;
+      margin: 0px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .menu {
+        ul {
+          list-style-type: none;
+          display: flex;
+          li {
+            // padding: 0px 15px;
+            a {
+              display: block;
+              font-size: 15px;
+              font-weight: 700;
+              position: relative;
+              padding: 13px 25px;
+              cursor: pointer;
+              letter-spacing: 0.4px;
+              color: #222222;
+            }
+            &:last-child {
+              a {
+                padding-right: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .contentPage {
+  }
+}
+.topBarMain {
+  max-width: 970px;
+  height: 100%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .topBarLink {
+    width: 50%;
+    height: 100%;
+    ul {
+      list-style-type: none;
+      text-align: left;
+      padding-inline-start: 0px;
+      margin: 7px 0px;
+      li {
+        list-style: none;
+        display: inline-table;
+
+        a {
+          position: relative;
+          padding: 0 15px;
+          line-height: 16px;
+          font-size: 14px;
+          border-right: 1px solid rgba(255, 255, 255, 0.4);
+          margin: 5px 0;
+          letter-spacing: 0.4px;
+          color: #ffffff;
+          font-weight: 400;
+          &:hover {
+            color: #333;
+          }
+        }
+        &:first-child {
+          a {
+            padding-left: 0px;
+          }
+        }
+        &:last-child {
+          a {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+  .TopBarInfo {
+    width: 50%;
+    height: 100%;
+    ul {
+      list-style-type: none;
+      text-align: right;
+      padding-inline-start: 0px;
+      margin: 7px 0px;
+      li {
+        list-style: none;
+        display: inline-table;
+        padding: 0px 15px;
+        cursor: pointer;
+        &:first-child {
+          border-right: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        &:last-child {
+          padding-right: 0px;
+        }
+      }
+    }
+    .cart {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      .containerCart {
+        position: absolute;
+        right: 0;
+        background-color: #a5dc86;
+        width: 250px;
+        min-height: 100px;
+        height: auto;
+        padding: 20px;
+        z-index: 999;
+        border-radius: 5px;
+      }
+    }
+  }
+}

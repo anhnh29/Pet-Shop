@@ -1,6 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './index.module.scss'
+import Head from "next/head";
+import Image from "next/image";
+import Header from "../components/Header";
+import styles from "./index.module.scss";
+import ListProduct from "../components/Products/ListProduct/index";
 
 export default function Home() {
   return (
@@ -10,6 +12,9 @@ export default function Home() {
         <meta name="description" content="pet shop" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header>
+        <ListProduct />
+      </Header>
     </div>
-  )
+  );
 }

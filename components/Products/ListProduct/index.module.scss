@@ -1,0 +1,19 @@
+.container {
+  width: 970px;
+  height: auto;
+  margin: 0px auto;
+  margin-top: 20px;
+
+  .title {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 26px;
+    color: #222222;
+    font-family: "Laila", sans-serif;
+    font-weight: 600;
+  }
+  .listPro {
+    display: flex;
+  }
+}
