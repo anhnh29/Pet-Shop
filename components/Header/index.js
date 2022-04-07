@@ -1,17 +1,10 @@
 import React, { useEffect } from "react";
 // import { AiOutlineSearch } from "react-icons/fa";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
+import Cart from "./Cart";
 import styles from "./index.module.scss";
 
 const Header = ({ children }) => {
-  useEffect(() => {
-    const element = document.getElementById("cart");
-    element.addEventListener("click", funcShowCart);
-    function funcShowCart() {
-      console.log("Heress___Over");
-    }
-  });
-
   return (
     <div className={styles.container}>
       <div className={styles.headerContainer}>
@@ -37,7 +30,9 @@ const Header = ({ children }) => {
                 </li>
                 <li id="cart" className={styles.cart}>
                   <AiOutlineShoppingCart style={{ color: "white" }} />
-                  <div className={styles.containerCart}>Cart item</div>
+                  <div className={styles.containerCart}>
+                    <Cart />
+                  </div>
                 </li>
               </ul>
             </div>
