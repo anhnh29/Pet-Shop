@@ -7,12 +7,19 @@
     {
       "id": 2,
       "name": "cat"
+    },
+    {
+      "id": 3
+    },
+    {
+      "name": "monkey",
+      "id": 4
     }
   ],
   "products": [
     {
       "id": 1,
-      "name": "Pedigree Biscrok Biscuits Dog Treat",
+      "name": "1 Pedigree Biscrok Biscuits Dog Treat",
       "price": "$50.00 - $90.00",
       "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/01-256x320.jpg",
       "configOpt": false,
@@ -20,7 +27,7 @@
     },
     {
       "id": 2,
-      "name": "Pedigree Biscrok Biscuits Dog Treat",
+      "name": "2 Pedigree Biscrok Biscuits Dog Treat",
       "price": "$50.00 - $90.00",
       "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/18-256x320.jpg",
       "configOpt": true,
@@ -28,7 +35,7 @@
     },
     {
       "id": 3,
-      "name": "Pedigree Biscrok Biscuits Dog Treat",
+      "name": "3 Pedigree Biscrok Biscuits Dog Treat",
       "price": "$50.00 - $90.00",
       "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/18-256x320.jpg",
       "configOpt": false,
@@ -36,7 +43,7 @@
     },
     {
       "id": 4,
-      "name": "Pedigree Biscrok Biscuits Dog Treat",
+      "name": "4 Pedigree Biscrok Biscuits Dog Treat",
       "price": "$50.00 - $90.00",
       "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/18-256x320.jpg",
       "configOpt": false,
@@ -44,7 +51,79 @@
     },
     {
       "id": 5,
-      "name": "Pedigree Biscrok Biscuits Dog Treat",
+      "name": "5 Pedigree Biscrok Biscuits Dog Treat",
+      "price": "$50.00 - $90.00",
+      "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/18-256x320.jpg",
+      "configOpt": false,
+      "categoryId": 2
+    },
+    {
+      "id": 6,
+      "name": "6 Pedigree Biscrok Biscuits Dog Treat",
+      "price": "$50.00 - $90.00",
+      "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/18-256x320.jpg",
+      "configOpt": false,
+      "categoryId": 2
+    },
+    {
+      "id": 7,
+      "name": "7 Pedigree Biscrok Biscuits Dog Treat",
+      "price": "$50.00 - $90.00",
+      "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/18-256x320.jpg",
+      "configOpt": false,
+      "categoryId": 2
+    },
+    {
+      "id": 8,
+      "name": "8 Pedigree Biscrok Biscuits Dog Treat",
+      "price": "$50.00 - $90.00",
+      "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/18-256x320.jpg",
+      "configOpt": false,
+      "categoryId": 2
+    },
+    {
+      "id": 9,
+      "name": "9 Pedigree Biscrok Biscuits Dog Treat",
+      "price": "$50.00 - $90.00",
+      "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/18-256x320.jpg",
+      "configOpt": false,
+      "categoryId": 2
+    },
+    {
+      "id": 10,
+      "name": "10 Pedigree Biscrok Biscuits Dog Treat",
+      "price": "$50.00 - $90.00",
+      "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/18-256x320.jpg",
+      "configOpt": false,
+      "categoryId": 2
+    },
+    {
+      "id": 11,
+      "name": "11 Pedigree Biscrok Biscuits Dog Treat",
+      "price": "$50.00 - $90.00",
+      "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/18-256x320.jpg",
+      "configOpt": false,
+      "categoryId": 2
+    },
+    {
+      "id": 12,
+      "name": " 12 Pedigree Biscrok Biscuits Dog Treat",
+      "price": "$50.00 - $90.00",
+      "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/18-256x320.jpg",
+      "configOpt": false,
+      "categoryId": 2
+    },
+    {
+      "id": 13,
+      "name": "13 Pedigree Biscrok Biscuits Dog Treat",
+      "price": "$50.00 - $90.00",
+      "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/18-256x320.jpg",
+      "configOpt": false,
+      "categoryId": 2
+    },
+    {
+      "id": 14,
+      "name": "14 Pedigree Biscrok Biscuits Dog Treat",
       "price": "$50.00 - $90.00",
       "img": "https://demo.webdigify.com/WCM01/WCM030_petzen/wp-content/uploads/2017/01/18-256x320.jpg",
       "configOpt": false,

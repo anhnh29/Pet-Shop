@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from "../components/Header";
 import styles from "./index.module.scss";
 import ListProduct from "../components/Products/ListProduct/index";
+// json-server -p 4000 db.json
 
 export default function Home() {
   return (

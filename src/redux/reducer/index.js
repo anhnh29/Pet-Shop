@@ -7,6 +7,7 @@ import {
   INCREASE_QUANTITY,
   DECREASE_QUANTITY,
   GET_PRODUCTS,
+  SET_LIST_PRODUCTS,
 } from "../type";
 
 const initState = {
@@ -16,8 +17,13 @@ const initState = {
 };
 const rootReducer = (state = initState, action) => {
   switch (action.type) {
+    case SET_LIST_PRODUCTS:
+      // check get fail
+      return {
+        ...state,
+        products: action.payload,
+      };
     case GET_PRODUCTS:
-      console.log("hereh", action);
       return state;
     case ADD_CART:
       console.log("state", state);

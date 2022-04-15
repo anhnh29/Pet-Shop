@@ -8,16 +8,31 @@ import callApi from "../../../pages/api/product";
 import store from "../../../src/redux/store/index";
 import { getListCart } from "../../../src/redux/selecter";
 import { getProducts } from "../../../src/redux/action";
+import PaginationHooks from "../../../src/redux/hooks/PaginationHooks";
 
 const ListProduct = () => {
-  const listCart = useSelector(getListCart);
   const dispatch = useDispatch();
+  const listCart = useSelector((store) => store.products);
 
   const [list, setList] = useState([]);
+  const [current, setCurrent] = useState(1);
+  const [minIndex, setMinIndex] = useState(0);
+  const [maxIndex, setMaxIndex] = useState(3);
+  const pageSize = 3;
 
   useEffect(() => {
-    dispatch(getProducts());
-  });
+    getProducts(dispatch);
+  }, []);
+
+  useEffect(() => {
+    setList(listCart);
+  }, [listCart]);
+
+  const handleChanePage = (page) => {
+    setCurrent(page);
+    setMinIndex((page - 1) * pageSize);
+    setMaxIndex(page * pageSize);
+  };
 
   return (
     <div className={styles.container}>
@@ -25,13 +40,21 @@ const ListProduct = () => {
       <div className={styles.listPro}>
         {list &&
           list.map((product, idx) => {
-            return (
-              <>
-                <Product product={product} />
-              </>
-            );
+            if (idx >= minIndex && idx < maxIndex) {
+              return (
+                <>
+                  <Product product={product} />
+                </>
+              );
+            }
           })}
       </div>
+      <PaginationHooks
+        pageSize={pageSize}
+        current={current}
+        total={listCart.length}
+        onChange={handleChanePage}
+      />
     </div>
   );
 };

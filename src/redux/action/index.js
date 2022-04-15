@@ -3,6 +3,7 @@ import {
   DECREASE_QUANTITY,
   GET_PRODUCTS,
   INCREASE_QUANTITY,
+  SET_LIST_PRODUCTS,
 } from "../type";
 import callApi from "../../../pages/api/product";
 
@@ -27,13 +28,13 @@ export function decreaseQuantity(payload) {
   };
 }
 
-export const getProducts = async () => {
+export const getProducts = async (dispatch) => {
   try {
     const getList = await callApi("products");
-    return {
-      type: GET_PRODUCTS,
+    dispatch({
+      type: SET_LIST_PRODUCTS,
       payload: getList.data,
-    };
+    });
   } catch (error) {
     console.log("error", error);
   }
